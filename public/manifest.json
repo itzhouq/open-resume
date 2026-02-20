@@ -1,0 +1,38 @@
+{
+  "name": "OpenResume - 在线简历生成器",
+  "short_name": "OpenResume",
+  "description": "免费、开源且强大的在线简历生成器，帮助你轻松创建专业简历",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "创建简历",
+      "short_name": "新建简历",
+      "description": "创建新简历",
+      "url": "/resume-builder",
+      "icons": [{ "src": "/logo.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "导入简历",
+      "short_name": "导入",
+      "description": "从 PDF 导入简历",
+      "url": "/resume-import",
+      "icons": [{ "src": "/logo.svg", "sizes": "96x96" }]
+    }
+  ]
+}

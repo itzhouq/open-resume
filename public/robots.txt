@@ -1,0 +1,19 @@
+# robots.txt - 搜索引擎爬虫规则
+# 允许所有搜索引擎爬取
+
+User-agent: *
+Allow: /
+
+# 百度爬虫单独配置
+User-agent: Baiduspider
+Allow: /
+
+# 禁止爬取 API 路由（如果有）
+User-agent: *
+Disallow: /api/
+
+Disallow: /_next/
+
+# Sitemap 位置
+# TODO: 部署后替换为实际域名
+Sitemap: https://open-resume.itzhouq.cn/sitemap.xml
