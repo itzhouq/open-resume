@@ -112,3 +112,22 @@ export function AdSenseScript() {
     />
   );
 }
+
+/**
+ * Adsterra 广告脚本组件
+ * 需要在页面中引入一次
+ */
+export function AdsterraScript() {
+  // 开发环境不加载 Adsterra 脚本
+  if (process.env.NODE_ENV === "development") {
+    return null;
+  }
+
+  return (
+    <Script
+      id="adsterra-init"
+      src="https://pl28918096.effectivegatecpm.com/85/20/db/8520db0f1d75b1abba97953fea721e76.js"
+      strategy="afterInteractive"
+    />
+  );
+}

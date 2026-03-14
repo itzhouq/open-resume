@@ -1,7 +1,7 @@
 import "globals.css";
 import { TopNavBar } from "components/TopNavBar";
 import { Analytics } from "@vercel/analytics/react";
-import { AdSenseScript } from "components/adsense/AdSensePlaceholder";
+import { AdSenseScript, AdsterraScript } from "components/adsense/AdSensePlaceholder";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://open-resume.itzhouq.cn";
 
@@ -114,6 +114,7 @@ export default function RootLayout({
       </head>
       <body>
         <AdSenseScript />
+        <AdsterraScript />
         <TopNavBar />
         {children}
         <Analytics />
